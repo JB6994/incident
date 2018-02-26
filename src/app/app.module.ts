@@ -3,11 +3,19 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './include/header/header.component';
+import { FooterComponent } from './include/footer/footer.component';
+import { MenuComponent } from './data/menu/menu.component';
+import { IncidentlistComponent } from './data/content/incidentlist/incidentlist.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    MenuComponent,
+    IncidentlistComponent
   ],
   imports: [
     BrowserModule
