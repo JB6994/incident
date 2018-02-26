@@ -3,6 +3,7 @@ import {Incident} from '../../../model/incident.model';
 import {IncidentService} from '../../../service/incident.service';
 import {TableModule} from 'primeng/table';
 
+
 @Component({
   selector: 'app-incidentlist',
   templateUrl: './incidentlist.component.html',
