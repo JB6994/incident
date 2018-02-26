@@ -10,7 +10,9 @@ import { IncidentlistComponent } from './data/content/incidentlist/incidentlist.
 import { IncidentService } from './service/incident.service';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './data/content/home/home.component';
-import {TableModule} from 'primeng/table';
+import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -31,7 +33,9 @@ const routes: Routes = [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    TableModule
+    TableModule,
+    ButtonModule,
+    CardModule
   ],
   providers: [IncidentService],
   bootstrap: [AppComponent]
