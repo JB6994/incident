@@ -8,9 +8,24 @@ import {MenuItem} from 'primeng/api';
 })
 export class MenuComponent implements OnInit {
 
+  items: MenuItem[];
+
   constructor() { }
 
   ngOnInit() {
+    this.items = [{
+      label: 'Home',
+      items: [
+        {label: 'Retour accueil', icon: 'fa fa-home', routerLink: '/home'}
+      ]
+    },
+      {
+        label: 'Incident',
+        items: [
+          {label: 'Nouveau', icon: 'fa-plus'},
+          {label: 'Liste', icon: 'fa-th-list', routerLink: '/incidents'}
+        ]
+      }];
   }
 
 }
