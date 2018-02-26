@@ -10,9 +10,15 @@
   </ng-template>
   <ng-template pTemplate="body" let-rowData let-columns="columns">
     <tr>
-      <td *ngFor="let col of columns">
-        {{rowData[col.field]}}
-      </td>
+      <td>{{rowData['id']}}</td>
+      <td>{{rowData['titre']}}</td>
+      <td>{{rowData['email']}}</td>
+      <td>{{rowData['description']}}</td>
+      <td>{{rowData['level']}}</td>
+      <td>{{rowData['type']}}</td>
+      <td>{{rowData['progress']}}</td>
+      <td>{{rowData['dateCreation'] | date: 'short'}}</td>
+      <td>{{rowData['dateModification'] | date: 'short'}}</td>
     </tr>
   </ng-template>
 </p-table>
