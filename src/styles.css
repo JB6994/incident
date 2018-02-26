@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.progressbar-red .ui-progressbar .ui-progressbar-value {
+  background: red;
+}
+
+.progressbar-orange .ui-progressbar .ui-progressbar-value {
+  background: orange;
+}
+
+.progressbar-yellow .ui-progressbar .ui-progressbar-value {
+  background: yellow;
+}
+
+.progressbar-green .ui-progressbar .ui-progressbar-value {
+  background: green;
+}

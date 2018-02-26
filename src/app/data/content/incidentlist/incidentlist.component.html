@@ -16,7 +16,7 @@
       <td>{{rowData['description']}}</td>
       <td>{{rowData['level']}}</td>
       <td>{{rowData['type']}}</td>
-      <td> <p-progressBar [ngClass]="{'progressBar-green': rowData['progress'] > 75, 'progresbar-red': rowData['progress'] < 21, 'progresbar-orange': rowData['progress'] < 50, 'progresbar-yellow': rowData['progress'] < 75}" [value] = "rowData['progress']" [showValue]="false"></p-progressBar> </td>
+      <td> <p-progressBar [ngClass]="{'progressBar-red': rowData['progress'] > -1, 'progressbar-orange': rowData['progress'] > 20, 'progressbar-yellow': rowData['progress'] > 49, 'progressbar-green': rowData['progress'] > 75}" [value] = "rowData['progress']" [showValue]="false"></p-progressBar> </td>
       <td>{{rowData['dateCreation'] | date: 'short'}}</td>
       <td>{{rowData['dateModification'] | date: 'short'}}</td>
     </tr>
