@@ -15,6 +15,7 @@ import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import {MenuModule} from 'primeng/menu';
 import {MenuItem} from 'primeng/api';
+import {ProgressBarModule} from 'primeng/primeng';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -38,7 +39,8 @@ const routes: Routes = [
     TableModule,
     ButtonModule,
     CardModule,
-    MenuModule
+    MenuModule,
+    ProgressBarModule
   ],
   providers: [IncidentService],
   bootstrap: [AppComponent]
