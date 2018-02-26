@@ -13,6 +13,8 @@ import { HomeComponent } from './data/content/home/home.component';
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
+import {MenuModule} from 'primeng/menu';
+import {MenuItem} from 'primeng/api';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -35,7 +37,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     TableModule,
     ButtonModule,
-    CardModule
+    CardModule,
+    MenuModule
   ],
   providers: [IncidentService],
   bootstrap: [AppComponent]
